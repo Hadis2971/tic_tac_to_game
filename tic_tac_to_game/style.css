@@ -1,0 +1,184 @@
+*{
+    margin: 0em;
+    padding: 0em;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+html,body{height:100%;background-color: #F5F5F5;}
+
+#square{
+   position: relative;
+   width: 30em;
+   height: 30em;
+   margin: 6% auto;
+   background-color: #236AB9;
+   transition: opacity 1s ease;
+}
+
+#inner_square{
+    width: 25em;
+    height: 25em;
+    position: absolute;
+    left: 8.5%;
+    top: 8%;
+    
+}
+
+#inner_square > div{
+    float: left;
+    box-sizing: border-box;
+    width: 8em;
+    height: 8em;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    position: relative;
+}
+
+#inner_square::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modal{
+    width: 50%;
+    height: auto;
+    background-color: #2E4A62;
+    position: fixed;
+    z-index: 1;
+    top: 3.5em;
+    left: 25%;
+    box-sizing: border-box;
+    padding: 0.3em 0.3em 5em 0.3em;
+    border-radius: 1em;
+    display: none;
+    animation-name: modal_anime;
+    animation-duration: 1s;
+    -webkit-animation-name: modal_anime;
+    -webkit-animation-duration: 1s;
+}
+
+
+#modal_h1{
+    width: 90%;
+    text-align: center;
+    color: #2E4A62;
+    background-color: #FFF;
+    box-sizing: border-box;
+    border-bottom: 0.02em solid #2E4A62;
+    margin: 2% auto 0% auto;
+    padding: 1.6em;
+}
+
+#choose{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    color: #2E4A62;
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding: 0.7em;
+    font-size: 1.5em;
+}
+
+.modalContent > button{
+    width: 2.5em;
+    height: 2.5em;
+    background-color: transparent;
+    border: 0.06em solid #FFF;
+    outline: none;
+    font-size: 120%;
+    color: #FFF;
+    box-sizing: border-box;
+    position: absolute;
+    font-size: 1em;
+    padding: 0.7em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.5s ease;
+}
+
+.modalContent > button:hover{
+    background-color: #FFF;
+    color: #2E4A62;
+}
+
+#y{
+    right: 4%;
+    bottom: 0.4em;
+}
+
+#x{
+    right: 13%;
+    bottom: 0.4em;
+}
+
+@keyframes modal_anime{
+    from{top: -20em; opacity: 0}
+    to{top: 3.5em; opacity: 1}
+}
+
+@-webkit-keyframes modal_anime{
+    from{top: -20em; opacity: 0}
+    to{top: 3.5em; opacity: 1}
+}
+
+
+#box1{
+    border-right: 0.01em solid #FFF;
+    border-bottom: 0.01em solid #FFF;
+}
+
+#box2{
+    border-right: 0.01em solid #FFF;
+    border-bottom: 0.01em solid #FFF;
+}
+
+#box3{
+    border-bottom: 0.01em solid #FFF;
+}
+
+#box4{
+    border-right: 0.01em solid #FFF;
+    border-bottom: 0.01em solid #FFF;
+}
+
+#box5{
+    border-right: 0.01em solid #FFF;
+    border-bottom: 0.01em solid #FFF;
+}
+
+#box6{
+    border-bottom: 0.01em solid #FFF;
+}
+
+#box7{
+    border-right: 0.01em solid #FFF;
+}
+
+#box8{
+    border-right: 0.01em solid #FFF;
+}
+
+.box_spn{
+    position: absolute;
+    left: 40%;
+    top: 37%;
+    font-size: 1.7em;
+    color: #FFF;
+    user-select: none;
+    outline: none;
+    
+}
+
+
+
+.result{
+    text-align: center;
+    font-weight: 500;
+    color: #FC7307;
+}
+
+
+
+
